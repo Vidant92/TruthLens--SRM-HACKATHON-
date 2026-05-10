@@ -5,8 +5,8 @@ const morgan = require('morgan');
 require('dotenv').config();
 
 // Route files
-const analyzeRoutes = require('./src/routes/analyzeRoutes');
-const errorHandler = require('./src/middleware/error');
+const analyzeRoutes = require('./backend/src/routes/analyzeRoutes');
+const errorHandler = require('./backend/src/middleware/error');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
